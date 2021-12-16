@@ -1,5 +1,5 @@
 # SystemBackdropTypes
-A WPF demonstration of the System Backdrop Types which was discovered by [StartAllBack/StartIsBack](https://twitter.com/StartIsBack/status/1471262840313065474/) (yeah the same Windows 11 UI mod that you'd very likely heard of talking about Windows 11).
+A WPF demonstration of the System Backdrop Types which was discovered by [StartAllBack/StartIsBack](https://twitter.com/StartIsBack/status/1471262840313065474/) (yeah the same Windows 11 UI mod that you'd be very likely heard of talking about Windows 11).
 
 ## System requirements
 - Windows 11 build 22523 or newer.
