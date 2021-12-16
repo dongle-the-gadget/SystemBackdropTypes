@@ -11,7 +11,7 @@ A WPF demonstration of the System Backdrop Types which was discovered by [StartA
 ![Tabbed](https://user-images.githubusercontent.com/29563098/146360394-4f6773f1-35b1-4136-9ad8-1e1a923afc0b.png)
 
 ## License
-This application is licensed under The Unlicense.
+This application is licensed under [The Unlicense](/LICENSE.md).
 
 ModernWpf is licensed under the MIT License
 ```
