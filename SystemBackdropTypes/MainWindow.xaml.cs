@@ -22,13 +22,15 @@ namespace SystemBackdropTypes
     /// </summary>
     public partial class MainWindow : Window
     {
+        /*
         [Flags]
         enum DWM_SYSTEMBACKDROP_TYPE
         {
-            DWMSBT_MAINWINDOW = 2,
-            DWMSBT_TRANSIENTWINDOW = 3,
-            DWMSBT_TABBEDWINDOW = 4
+            DWMSBT_MAINWINDOW = 2, // Mica
+            DWMSBT_TRANSIENTWINDOW = 3, // Acrylic
+            DWMSBT_TABBEDWINDOW = 4 // Tabbed
         }
+        */
 
         [Flags]
         enum DWMWINDOWATTRIBUTE
