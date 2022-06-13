@@ -24,7 +24,6 @@ namespace SystemBackdropTypes
         {
             RefreshFrame();
             RefreshDarkMode();
-            SizeChanged += (_, _) => RefreshFrame();
             ThemeManager.Current.ActualApplicationThemeChanged += (_, _) => RefreshDarkMode();
         }
 
@@ -34,14 +33,11 @@ namespace SystemBackdropTypes
             HwndSource mainWindowSrc = HwndSource.FromHwnd(mainWindowPtr);
             mainWindowSrc.CompositionTarget.BackgroundColor = Color.FromArgb(0, 0, 0, 0);
 
-            System.Drawing.Graphics desktop = System.Drawing.Graphics.FromHwnd(mainWindowPtr);
-            float DesktopDpiX = desktop.DpiX;
-
             MARGINS margins = new MARGINS();
-            margins.cxLeftWidth = Convert.ToInt32(5 * (DesktopDpiX / 96));
-            margins.cxRightWidth = Convert.ToInt32(5 * (DesktopDpiX / 96));
-            margins.cyTopHeight = Convert.ToInt32(((int)ActualHeight + 5) * (DesktopDpiX / 96));
-            margins.cyBottomHeight = Convert.ToInt32(5 * (DesktopDpiX / 96));
+            margins.cxLeftWidth = -1;
+            margins.cxRightWidth = -1;
+            margins.cyTopHeight = -1;
+            margins.cyBottomHeight = -1;
 
             ExtendFrame(mainWindowSrc.Handle, margins);
         }
